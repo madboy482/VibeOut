@@ -1,4 +1,5 @@
 from fastapi import FastAPI, File, UploadFile, Form, HTTPException
+import * as faceapi from 'face-api.js'
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 import google.generativeai as genai
