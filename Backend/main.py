@@ -9,7 +9,9 @@ import tempfile
 import os
 import traceback
 
-GOOGLE_API_KEY = 'your_api'
+GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
+if not GOOGLE_API_KEY:
+    raise ValueError("GOOGLE_API_KEY is not set in the environment variables.")
 genai.configure(api_key=GOOGLE_API_KEY)
 
 app = FastAPI()
