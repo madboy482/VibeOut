@@ -9,7 +9,7 @@ import tempfile
 import os
 import traceback
 
-GOOGLE_API_KEY = 'AIzaSyAgxiRhij1ZJZmpHSSIBh1wmDmWfiU7k-Q'
+GOOGLE_API_KEY = 'your_api'
 genai.configure(api_key=GOOGLE_API_KEY)
 
 app = FastAPI()
